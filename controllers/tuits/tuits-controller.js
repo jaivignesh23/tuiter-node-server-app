@@ -6,6 +6,16 @@ const createTuit = (req, res) => {
     newTuit._id = (new Date()).getTime()+'';
     newTuit.likes = 0;
     newTuit.liked = false;
+    newTuit.topic = "SpaceX"
+    newTuit.userName= "SpaceX",
+    newTuit.time= "2h",
+    newTuit.title= "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    newTuit.image= "teslaBigLogo.jpg",
+    newTuit.iconImg= "teslaBigLogo.jpg",
+    newTuit.replies= 0,
+    newTuit.retuits= 0,
+    newTuit.handle= "@spacex",
+    newTuit.dislikes = 0
     tuits.push(newTuit);
     res.json(newTuit);
   }
